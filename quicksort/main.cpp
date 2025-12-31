@@ -31,6 +31,7 @@ int partition(int array[], int low, int high) {
 
 void quickSort(int array[], int low,int high) {
     // This is the fisrt case, if low is major or equal than high
+    // Ended when low and high search in only one position of array
     if (low < high) {
         int pi = partition(array, low, high);
         quickSort(array, pi + 1, high);
