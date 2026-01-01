@@ -6,6 +6,7 @@ void printArray(int arr[], int ln) {
         std::cout << arr[i];
         if (i < ln-1) std::cout << ", ";
     }
+    std::cout << "\n";
 }
 
 int partition(int arr[], int low, int high) {
@@ -31,12 +32,37 @@ void quickSort(int arr[], int low, int high) {
     }
 }
 
+int  binarySort(const int arr[], int low, int high, int x) {
+    if (high >= low) {
+        int mid = low + (high - low) / 2;
+
+        if (arr[mid] == x) {
+            return mid;
+        }
+
+        if (x < arr[mid]) {
+            return binarySort(arr, low, mid - 1, x);
+        }
+
+        if (x > arr[mid]) {
+            return binarySort(arr, mid+1, high, x);
+        }
+    }
+    return -1;
+}
 
 int main() {
-    int arr[] = {4,1,0,2,5,3,10,6};
+    int arr[] = {42, 7, 89, 13, 56, 3, 71, 28, 64, 9};
     int ln = std::size(arr);
     quickSort(arr, 0, ln - 1);
     //std::ranges::sort(arr);
     printArray(arr, ln);
+
+    // Número a buscar igual a 3
+    int result = binarySort(arr, 0, ln - 1, 89 );
+
+   if (result == -1) std::cout << "Number not found";
+   else std::cout << "Position: " << result;
+
     return 0;
 }
