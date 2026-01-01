@@ -40,6 +40,7 @@ int  binarySort(const int arr[], int low, int high, int x) {
             return mid;
         }
 
+
         if (x < arr[mid]) {
             return binarySort(arr, low, mid - 1, x);
         }
