@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(inheritance main.cpp
         Animal.cpp
-        Animal.h)
+        Animal.h
+        Dog.cpp
+        Dog.h)

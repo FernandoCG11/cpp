@@ -16,7 +16,7 @@ private:
 
 public:
     Animal(std::string, int, const std::string&, std::string);
-    void getName();
+    void getScientificName();
     void getAge() const;
     void getNativeRegion();
     void getColor();

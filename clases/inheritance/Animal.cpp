@@ -9,7 +9,7 @@
 
 Animal::Animal(std::string _scientificName, int _age, const std::string& _nativeRegion, std::string _color) : scientificName(std::move(_scientificName)), age(_age),  color(std::move(_color)){};
 
-void Animal::getName() {
+void Animal::getScientificName() {
     std::cout << "Scientific name: " << scientificName;
 }
 
