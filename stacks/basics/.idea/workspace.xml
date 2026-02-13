@@ -5,6 +5,8 @@
   </component>
   <component name="BackendCodeEditorMiscSettings">
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
@@ -95,7 +97,9 @@
       <updated>1770405389294</updated>
       <workItem from="1770405390395" duration="428000" />
       <workItem from="1770595989565" duration="6076000" />
-      <workItem from="1770745767213" duration="12000" />
+      <workItem from="1770745767213" duration="268000" />
+      <workItem from="1770747756180" duration="93000" />
+      <workItem from="1770747915539" duration="56000" />
     </task>
     <servers />
   </component>
