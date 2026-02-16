@@ -39,6 +39,17 @@ void showElements(Node* &list) {
     showElements(list->next);
 }
 
+bool findElement(Node* &list, const int n) {
+    Node* tem = list;
+    while (tem != nullptr) {
+        if (tem->value == n) {
+            return true;
+        }
+        tem=tem->next;
+    }
+    return false;
+}
+
 int main() {
     Node* list{};
     int n = 0;
@@ -49,5 +60,10 @@ int main() {
     std::cin >>n;
     insertElement(list, n);
     showElements(list);
+
+    std::cout << "Enter a number to desire to find: ";
+    std::cin >> n;
+    std::cout << findElement(list, n);
+
     return 0;
 }
