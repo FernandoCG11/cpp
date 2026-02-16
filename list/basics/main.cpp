@@ -31,7 +31,23 @@ void insertElement(Node* &list, int n) {
     new_node->next = aux1;
 }
 
+void showElements(Node* &list) {
+    if (list == nullptr) {
+        return;
+    }
+    std::cout << "Value:" << list->value << " - position: " << list << std::endl;
+    showElements(list->next);
+}
+
 int main() {
-    
+    Node* list{};
+    int n = 0;
+    std::cout << "Enter number: ";
+    std::cin >>n;
+    insertElement(list, n);
+    std::cout << "Enter number: ";
+    std::cin >>n;
+    insertElement(list, n);
+    showElements(list);
     return 0;
 }
