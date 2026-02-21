@@ -27,11 +27,31 @@ void insertNode(Node* &tree, int n) {
     }
 }
 
+void showTree(Node* &tree, int counter) {
+    if (tree == nullptr) {
+        return;
+    }
+
+    showTree(tree->right, counter+1);
+    for (int i = 0; i < counter; i++) {
+        std::cout << " ";
+    }
+    std::cout << tree->value<<std::endl;
+    showTree(tree->left,counter+1);
+}
+
 int main() {
     Node* tree{};
     int n = 0;
     std::cout << "Insert value: ";
     std::cin >> n;
     insertNode(tree,n);
+    insertNode(tree,12);
+    insertNode(tree,7);
+    insertNode(tree,8);
+    insertNode(tree,3);
+    insertNode(tree,2);
+    insertNode(tree,1);
+    showTree(tree, 0);
     return 0;
 }
