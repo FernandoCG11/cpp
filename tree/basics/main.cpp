@@ -40,6 +40,29 @@ void showTree(Node* &tree, int counter) {
     showTree(tree->left,counter+1);
 }
 
+bool findElement(Node* &tree, int n) {
+    if (tree == nullptr) {
+        return false;
+    }
+    if (tree->value == n) {
+        return true;
+    }
+
+    if (tree->value > n ) {
+        return findElement(tree->left, n);
+    }
+    return findElement(tree->right, n);
+}
+
+void preOrder(Node* &tree) {
+    if (tree == nullptr) {
+        return;
+    }
+    std::cout << tree->value << " - ";
+    preOrder(tree->left);
+    preOrder(tree->right);
+}
+
 int main() {
     Node* tree{};
     int n = 0;
@@ -53,5 +76,13 @@ int main() {
     insertNode(tree,2);
     insertNode(tree,1);
     showTree(tree, 0);
+
+   // std::cout << "Enter value to find it: ";
+   // std::cin >> n;
+    //findElement(tree, n);
+    std::cout << "PreOreder: " << std::endl;
+    preOrder(tree);
+    std::cout << "InOrder: " << std::endl ;
+
     return 0;
 }
