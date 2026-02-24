@@ -63,6 +63,15 @@ void preOrder(Node* &tree) {
     preOrder(tree->right);
 }
 
+void inOrder(Node* tree) {
+    if (tree == nullptr) {
+        return;
+    }
+    inOrder(tree->left);
+    std::cout << tree->value << " - ";
+    inOrder(tree->right);
+}
+
 int main() {
     Node* tree{};
     int n = 0;
@@ -80,9 +89,9 @@ int main() {
    // std::cout << "Enter value to find it: ";
    // std::cin >> n;
     //findElement(tree, n);
-    std::cout << "PreOreder: " << std::endl;
+    std::cout << "PreOrder: " << std::endl;
     preOrder(tree);
-    std::cout << "InOrder: " << std::endl ;
-
+    std::cout << "\nInOrder: " << std::endl ;
+    inOrder(tree);
     return 0;
 }
