@@ -4,7 +4,12 @@
 void write() {
     // como el tipo - nombre de variable
     std::ofstream file;
-    file.open("/home/fernando/Downloads/data.txt", std::ios::out); // Abrienndo el archivo
+    std::string fileName;
+    std::cout << "Ingrese el nombre del archivo: ";
+    getline(std::cin, fileName);
+
+    //file.open("/home/fernando/Downloads/data.txt", std::ios::out); // Abrienndo el archivo
+    file.open("/home/fernando/Downloads/" + fileName+ ".txt", std::ios::out); // Abrienndo el archivo
 
     // Verificar que el archivo se creó
     if (file.fail()) {
