@@ -72,6 +72,15 @@ void inOrder(Node* tree) {
     inOrder(tree->right);
 }
 
+void postOrder(Node* tree) {
+    if (tree == nullptr) {
+        return;
+    }
+    postOrder(tree->left);
+    postOrder(tree->right);
+    std::cout << tree->value << " - ";
+}
+
 int main() {
     Node* tree{};
     int n = 0;
