@@ -1,0 +1,23 @@
+//
+// Created by fernando on 3/3/26.
+//
+
+#ifndef PRACTICE_PERSON_H
+#define PRACTICE_PERSON_H
+#include <string>
+
+class Person {
+private:
+    std::string name;
+    int age{};
+
+public:
+    Person(std::string _name, int _age);
+    void setName(std::string _name);
+    [[nodiscard]] const std::string& getName() const;
+    void setAge(int _age);
+    [[nodiscard]] int getAge()const;
+};
+
+
+#endif //PRACTICE_PERSON_H
