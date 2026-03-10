@@ -14,7 +14,9 @@ private:
 public:
     Person(std::string _name, int _age);
     void setName(std::string _name);
+    // nodiscard es para que cuando se llame mandar la función el compilador indica que se tiene que usar el valor
     [[nodiscard]] const std::string& getName() const;
+
     void setAge(int _age);
     [[nodiscard]] int getAge()const;
 };
