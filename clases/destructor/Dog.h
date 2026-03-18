@@ -11,7 +11,7 @@ private:
     std::string name,race;
 
 public:
-    Dog(std::string _name, std::string _race);
+    Dog(std::string name, std::string _race);
     ~Dog()=default;
     void run();
 };
