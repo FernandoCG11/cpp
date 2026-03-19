@@ -8,14 +8,14 @@
 
 
 class Dog {
-private:
+public:
     std::string name;
-    int power{}, atack{};
+    int power{}, attack{};
 
 public:
     Dog(std::string, int, int);
     void showInfo() const;
-    friend void modifyData(Dog &, int, int);
+    friend void modifyData(Dog&,std::string, int, int);
 
 };
 

@@ -7,11 +7,11 @@
 #include <iostream>
 #include <utility>
 
-Dog::Dog(std::string name, int power, int atack): name(std::move(name)), power(power), atack(atack) {
+Dog::Dog(std::string name, int power, int attack): name(std::move(name)), power(power), attack(attack) {
 }
 
 void Dog::showInfo() const {
-    std::cout << "Name: " << this->name;
+    std::cout << "\nName: " << this->name;
     std::cout << "\nPower: " << this->power;
-    std::cout << "\nAtack: " << this->atack;
+    std::cout << "\nAttack: " << this->attack;
 }
