@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(heritage main.cpp
         Shape.cpp
         Shape.h
-        Shape.cpp)
+        Shape.cpp
+        Triangle.cpp
+        Triangle.h)

@@ -13,6 +13,7 @@ private:
 public:
     Shape(int);
      [[nodiscard]] int getNSides()const;
+    ~Shape()=default;
 };
 
 
