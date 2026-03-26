@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(inheritance_classes main.cpp
         Vehicle.cpp
-        Vehicle.h)
+        Vehicle.h
+        Turism.cpp
+        Turism.h)

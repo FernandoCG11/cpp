@@ -17,6 +17,7 @@ public:
     Vehicle(std::string brand, int model, std::string color);
     [[nodiscard]] std::string getBrand() const;
     [[nodiscard]] int getModel() const;
+    ~Vehicle()=default;
 
 private:
     void setBrand(std::string newName);
