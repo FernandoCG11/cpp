@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(abstract_class main.cpp
         LivingOrganism.cpp
         LivingOrganism.h
+        Herbivorous.cpp
+        Herbivorous.h
 )

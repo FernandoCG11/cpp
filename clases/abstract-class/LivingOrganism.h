@@ -10,7 +10,7 @@ class LivingOrganism {
 public:
     virtual ~LivingOrganism() = default;
 
-    virtual double feedOneself() = 0;
+    virtual void feedOneself() = 0;
 };
 
 
