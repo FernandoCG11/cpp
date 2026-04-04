@@ -10,8 +10,8 @@ class Poligon {
 public:
     virtual ~Poligon() = default;
 
-    virtual float getArea() = 0;
-    virtual float getPerimeter() = 0;
+    [[nodiscard]] virtual float getArea() const = 0;
+    [[nodiscard]] virtual float getPerimeter() const = 0;
 };
 
 

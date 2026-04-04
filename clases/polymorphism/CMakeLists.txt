@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(polymorphism main.cpp
         Poligon.cpp
-        Poligon.h)
+        Poligon.h
+        Triangle.cpp
+        Triangle.h)
