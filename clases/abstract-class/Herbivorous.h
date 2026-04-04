@@ -10,7 +10,6 @@
 
 
 class Herbivorous: public LivingOrganism{
-    void feedOneself() override;
 };
 
 

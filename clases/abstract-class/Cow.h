@@ -12,6 +12,8 @@ public:
     void feedOneself() override {
         std::cout << "The cow is eating" << std::endl;
     };
+    ~Cow() override = default;
+
 };
 
 
