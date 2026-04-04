@@ -7,4 +7,6 @@ add_executable(polymorphism main.cpp
         Poligon.cpp
         Poligon.h
         Triangle.cpp
-        Triangle.h)
+        Triangle.h
+        cmake-build-debug/Rectangle.cpp
+        cmake-build-debug/Rectangle.h)
