@@ -8,4 +8,6 @@ add_executable(abstract_class main.cpp
         LivingOrganism.h
         Herbivorous.cpp
         Herbivorous.h
+        Cow.cpp
+        Cow.h
 )
